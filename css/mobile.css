@@ -1,0 +1,64 @@
+/* MOBİL TELEFONLAR İÇİN YAPTIGIMIZ DÜZENLEMELERİN BULUNDUGU CSSLER*/
+
+#navbar {
+    flex-direction: column;
+    padding-top: 0.5rem;/* üstten boşluk bıraktık*/
+    padding-bottom: 0.5rem;/* alttan boşluk bıraktık*/
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden; /* mobil ekranlarında üstüne gelme durumda bir taşma oluyor taşmaması için bunu ekledik*/
+    height: 90px;
+}
+
+body header {
+    height: 90px;
+}
+
+#navbar ul {
+    font-size: 12px;
+    padding: 0.3rem 0;
+}
+
+#navbar h1 {
+    padding-top: 0.8rem;
+}
+
+#training .items {
+    display: flex;
+    flex-direction: column;
+}
+
+#training .items .item {
+    width: 100%;
+}
+
+.courses .course {
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.title-description {
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.project-title {
+    padding-top: 0.5rem;
+    opacity: 0.7;
+    align-items: center;
+}
+
+.project-description {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.5;
+    align-items: center;
+}

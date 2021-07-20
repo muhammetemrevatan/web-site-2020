@@ -1,0 +1,167 @@
+/* HER YERDE KULLANACAGIMIZ CSSLER*/
+
+/* Her yerde kullanabileceğimiz hazır özellikleri barındırır.*/
+
+/* BURADAKİ HER METODU KULLANMAMIS OLABİLİRSİN.
+
+/* Text için yapmıs oldgunuz hazır özellikler.*/
+
+.text-center {  /* eğer bir text'in center olarak hiza almasını istiyorsak direk bu class özelliği kullanılır*/
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------*/
+
+.heading-small{
+    font-size: 1.25rem;
+}
+
+.heading-medium{
+    font-size: 1.5rem;
+}
+
+.heading-big{
+    font-size: 1.75rem;
+}
+
+/* Colors için yapmıs oldugumuz hazır özellikler */
+
+.bg-dark-blue {
+    background: #062e51;
+}
+
+.bg-light-blue {
+    background: #336ea2;
+}
+
+/* Buttons */
+
+.btn {
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+    border: 0.5px solid #336ea2;
+}
+
+.btn-color {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn-primary {
+    background: #336ea2;
+}
+
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.192);
+    color: #b6b6b6;
+    border: 0.5px solid #303133;
+}
+
+.btn-dark {
+    background: #333;
+}
+
+.btn-dark:hover {
+    color: #333;
+    background: #fff;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Container */ 
+
+.container { /* tanımladıgımız cantainer css'i sayfa 1100px in üstüne çıkınca yazıların otomatik olarak daha fazla genişe gitmemesini ve ortalanmasını sağlıyor*/
+    max-width: 1100px;
+    margin : 0 auto;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0px;;
+    z-index: 1;
+}
+
+.position-fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 350px;
+    height: 190px;
+    border: 1px solid #062e51;
+    background: #a2a8ac;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.width-300px {
+    width: 300px;
+    height: 200px;
+}
+
+.width-200px {
+    width: 200px;
+    height: 150px;
+}
+
+.width-100px {
+    width: 100px;
+    height: 75px;
+}
+
+/* Forms */
+
+.form-group {
+    padding: 0.25rem 0;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-control{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none; /* mesaj kısmızı genişletememek için kullanılır*/
+    border-radius: 5px;
+}
+
+.item-description {
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.title-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    padding-left: 2rem;
+    padding-top: 2.5rem;
+    opacity: 0.7;
+}
+
+.project-description {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.project-img img {
+    padding: 5px;
+    border-radius: 50px;
+}

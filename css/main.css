@@ -1,0 +1,149 @@
+/* ANA CSS DOSYAMIZ */ 
+*{
+    margin: 0; /* Kendisinin default olarak bıraktığı boşluğu kaldırdık*/
+    padding: 0; /* li özelliğinden gelen noktaları kaldırmak için kullandık ama padding bu demek değil itemın kenar boşluklarını değiştirmek anlamına gelir.*/
+    box-sizing: border-box; /* boyutları sizeları otomatik olarak ayarlar*/
+}
+a{
+    text-decoration: none; /* sayfadaki linklerin altı çizili olmasını kaldırdık*/
+    color: #ffffff;
+}
+
+html{
+    font-family: "Open Sans", sans-serif; /* Tüm html projesi içinde kullanacagımız yazıların tipini belirledik tabi ki fonts.google sayesinde.*/
+}
+
+/* Navbar Section */
+
+#navbar {
+    color: #fff; /* id'si navbar olan şeyin rengini beyaz yaptık.*/
+    display: flex; /* muhammet emre vatan yazısı ile anasayfa,eğitim vb yazıları yan yana getirmek için kullandık*/
+    justify-content: space-between; /* ul(anasayfa,eğitim vb yazıları) ile h1(muhammet emre vatan yazısı) arasında boşluk bırak dedik. bir en sağda diğeri en solda kaldı aralarını kenarlara dayanan kadar boşluk yaptı*/
+    align-items: center; /*ortalama işlemi yaptık. yazıyı ortaladık MUhammet Emre vatan yazısı dikey ortalandı.*/
+    padding: 0 0.75rem; /*üst taraftan padding istemiyoruz sadece sol ve sağ taraftan padding bırakıyoruz.*/
+    height: 70px; 
+}
+
+#navbar ul {
+    list-style-type: none; /* ul lerdeki nokta seçimi disk olan noktaları none diyerek sıfırladık none yerine disk yazarsan nkta gelir.*/
+    display: flex; /* üst üste ola ul lerin yan yana gelmesini sağladık.*/
+    align-items: center; /* ul lerimizi dikey ortaladık*/
+}
+
+#navbar ul li a {
+    padding : 0.5rem; /* ul nin içindeki li nin içindeki a ların kenarlarında boşşluk olusturmak için kullanılır*/
+}
+
+#navbar ul li a:hover { /* a nın üzerine geldiğinde yapılacak olanlar anlamına gelir ":hover" */
+    background: #336ea2;
+    border-radius: 4px; /* üstüne geldiğimizde köşeli olarak çıkan yeni renk biraz daha ovalleştirildi.*/
+}
+
+.muhammetemrevatan{ /* resim boyutunu ayarlamak için tanımlanmıs bir method */
+    width: 300px;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*yatay hizalama*/
+    align-items: center; /*dikey hizalama*/
+    padding: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+#home div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home img {
+    max-width: 50%;
+    min-width: 00%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#home .name h2 {
+    margin-bottom: 0.75rem;
+}
+
+#home .name p {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+#training {
+    color: #fff;
+    padding: 1rem;
+}
+
+#training .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#training .items .item {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#training .items .item:hover {
+    color: chocolate;
+    opacity: 0.9;
+}
+
+
+
+.banaulas{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #232c2b;
+    font-family: 'Roboto Slab', serif;
+    font-style: oblique;
+}
+
+/* Contact */
+
+#contact {
+    color: #fff;
+    padding: 1rem;
+}
+
+#contact .contact-form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#contact .contact-form ul li a {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#contact .contact-form ul li a:hover {
+    opacity: 0.6;
+}
+
+#project-studies .container h3 {
+    padding: 10px;
+}
+
+
+
+
+
